@@ -18,7 +18,11 @@ $ git config --global credential.helper store
 
 - 커밋 삭제하기
 ```
-git reset HEAD^
+$ git reset HEAD^
 ```
 
+- 에러와 상관없이 강제로 push
+```
+$ git push -u origin +master
+```
 ![](./img/gitflow.png)
