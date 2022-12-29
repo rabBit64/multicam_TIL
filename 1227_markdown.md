@@ -50,4 +50,4 @@ console.log(foo(5));
 [Google](https://www.google.com)
 
 ### **Images**
-![text](./stack.png)
+![text](./img/stack.png)
