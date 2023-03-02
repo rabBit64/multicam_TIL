@@ -8,14 +8,14 @@
   <style>
     * {
       box-sizing: border-box;
-      width:500px;
+      width:1500px;
       margin: auto;
     }
     h1{
         color:blue
     }
     .img{
-      width:100%
+      width:100%;
     }
     .gray {
       color:gray;
@@ -23,11 +23,16 @@
     .box {
       border: 1px solid;
       padding: 3px;
+      display:flex;
+      flex-direction: row;
+      flex-wrap:wrap;
     }
     .container1 {
-      width:500px;
+      width:0.5rem;
       position:relative;
-      right:10px;
+      /*right:10px;*/
+      flex:1;
+      overflow:auto;
     }
     .container2{
       width:50px;
@@ -40,23 +45,23 @@
 <body>
   <div class="box">
     <div class="container1">
-      <!--실습1-1.position 속성을 활용하여 인물사진 위에 국기사진-->
+    <!--실습1-1.position 속성을 활용하여 인물사진 위에 국기사진-->
       <img src="img/profile.png" alt="tim" class="img">
-      <div class="container2">
-        <img src="img/position1.png" alt="flag" class="img">
-      </div>
+    <div class="container2">
+      <img src="img/position1.png" alt="flag" class="img">
     </div>
+  </div>
     <!--실습1-2. box model을 조정하여 내부 요소 여백 조정-->
-      <h1>팀 버스너리</h1>
-      <p class="gray">프로그래머</p>
-      
-      <p>1989년 월드 와이드 웹의 하이퍼텍스트 시스템을 고안하여 개발했다. 인터넷의 기반을 닦은 여러 공로로 웹의 아버지라고 불리는 인물 중 하나이다.</p>
-      <b2>인물 정보</b2>
-      <ul>
-        <li>국적:영국</li>
-        <li>생년월일: 1955년 6월 8일</li>
-        <li>위키: <a href="https://ko.wikipedia.org/wiki/팀_버스너리">https://ko.wikipedia.org/wiki/팀_버스너리</a></li>
-      </ul>
+  <h1>팀 버스너리</h1>
+  <p class="gray">프로그래머</p>
+  
+  <p>1989년 월드 와이드 웹의 하이퍼텍스트 시스템을 고안하여 개발했다. 인터넷의 기반을 닦은 여러 공로로 웹의 아버지라고 불리는 인물 중 하나이다.</p>
+  <b2>인물 정보</b2>
+  <ul>
+    <li>국적:영국</li>
+    <li>생년월일: 1955년 6월 8일</li>
+    <li>위키: <a href="https://ko.wikipedia.org/wiki/팀_버스너리">https://ko.wikipedia.org/wiki/팀_버스너리</a></li>
+  </ul>
   </div>
 </body>
 </html>
