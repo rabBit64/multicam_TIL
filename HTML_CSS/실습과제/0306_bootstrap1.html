@@ -1,0 +1,33 @@
+<!--
+  실습목표: Bootstrap Card 활용해보기
+  https://getbootstrap.com/docs/5.3/components/card/
+  배운점
+  -opacity를 적용하면 자식모두 투명해짐
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <div class="card border-secondary mb-3" style="width: 18rem;" style="background-color: lightgray;">
+      <img src="../img/profile.png" class="card-img-top" alt="...">
+      <div class="card-body" style="background-color: rgb(211, 211, 211,0.2);" >
+        <h5 class="card-title" "><strong>팀 버너스리</strong></h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">국적-영국</li>
+        <li class="list-group-item">생년월일-1955년 6월 8일</li>
+        <li class="list-group-item">직업-전산과학자,프로그래머,교수</li>
+        <li class="list-group-item">출신 대학-옥스퍼드 대학교 물리학 학사</li>
+      </ul>
+      <div style="background-color: rgb(211, 211, 211,0.2);">
+        <button type="login" class="btn btn-primary" style="float:right; margin:3px;">추가정보</button>
+      </div>
+    </div>
+  </body>
+</html>

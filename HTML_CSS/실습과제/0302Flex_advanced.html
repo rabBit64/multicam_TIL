@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem;
+  }
+  .img{
+    height:100%;
+  }
+  .card{
+    background-color: lightblue;
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow:1;
+    flex-basis:300px;
+  }
+  .container{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+  }
+</style>
+<body>
+  <nav class="navbar">
+    <img class="navbar__logo" src="../img/google.png" alt="#">
+    <div>구글</div>
+  </nav>
+  <main class="container">
+    <div class="card">
+      <h2>제목</h2>
+      <img src="../img/card.png">
+      <div>내용</div>
+    </div>
+    <div class="card">
+      <h2>제목</h2>
+      <img src="../img/card.png">
+      <div>내용</div>
+    </div>
+    <div class="card">
+      <h2>제목</h2>
+      <img src="../img/card.png">
+      <div>내용</div>
+    </div>
+  </main>
+</body>
+</html>
