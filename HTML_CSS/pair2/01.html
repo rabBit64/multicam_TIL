@@ -11,10 +11,15 @@
 <style>
     html {
     scroll-behavior: smooth;
-}
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
 </style>
 <body>
-    <header class="pt-4">
+    <a name="맨위"></a>
+    <header class="pt-4 mb-5">
         <nav class="navbar-expand">
             <div class="d-flex justify-content-between mx-5">
                 <div class="d-flex flex-row justify-content-center align-items-center">
@@ -34,18 +39,37 @@
         </nav>
     </header>
 
-    <nav class="navba"
+    <nav class="navbar-expand d-flex flex-column justify-content-center">
+        <div class="d-flex flex-row justify-content-center align-items-center mt-5 mb-5 bg-light">
+            <div class="border-end border-dark border-2">
+                <div class="btn btn-outline-light fs-4 text-dark ">
+                    <a href="#새 소식">새 소식</a>
+                </div>
+            </div>
+            
+            <div class="border-end border-dark border-2">
+                <div class="btn btn-outline-light fs-4 text-dark">
+                    <a href="#순간을 놓치지 마세요">순간을 놓치지 마세요</a>
+                </div>
+            </div>
+            
+            <div class="btn btn-outline-light fs-4 text-dark">
+                    <a href="#네이버 메일, 블로그와 함께!">네이버 메일, 블로그와 함께!</a>
+            </div>
+        </div>
+    </nav>
 
     <main>
         <div class="container-lg d-flex flex-column flex-wrap justify-content-center mt-5">
             <div class="d-flex flex-column flex-wrap justify-content-center">
+                <a name="새 소식"></a>
                 <header class="mb-3 mt-3 offset-1">
                     <h2 class="fw-bold">MYBOX 새 소식</h2>
                 </header>
                 <main class="my-5">
                     <div class="container">
                         <div class="row mb-4">
-                            <div class="col-5 offset-1 d-flex flex-row">
+                            <div class="col-lg-5 offset-lg-1 d-flex flex-row">
                                 <div class="">
                                     <img src="01.png" class="rounded d-block" alt="왜안나와">
                                 </div>
@@ -54,7 +78,7 @@
                                     <p class="fs-6">안녕하세요, 네이버 MYBOX 팀입니다. PC웹에서 개선된 올리기로 파일 및 폴더를 편하게 올리세요. 파일및 폴더가 잘 올라가는지 한눈에 알 수 있어요.</p>
                                 </div>
                             </div>
-                            <div class="col-5 d-flex flex-row">
+                            <div class="col-lg-5 d-flex flex-row">
                                 <div class="">
                                     <img src="02.png" class="rounded d-block" alt="왜안나와">
                                 </div>
@@ -65,16 +89,16 @@
                             </div>
                         </div>
                         <div class="row">  
-                            <div class="col-5 offset-1 d-flex flex-row">
+                            <div class="col-lg-5 offset-lg-1 d-flex flex-row">
                                 <div class="">
                                     <img src="03.png" class="rounded d-block" alt="왜안나와">
                                 </div>
                                 <div class="text-start ms-3">
-                                    <h4 class="fs-5 fw-bold text-truncate">MYBOX 활용백서 대공개! #로고 (활용팁 모음)</h4>
+                                    <h4 class="fs-5 fw-bold text-truncate">MYBOX 활용백서 대공개! &#x1F4D6; (활용팁 모음)</h4>
                                     <p class="fs-6">안녕하세요, 네이버 MYBOX 팀입니다. MYBOX를 처음 시작하는 분들도 사용하고는 있지만 아직 어떻게 활용하는지 잘 모르겠...</p>
                                 </div>
                             </div>
-                            <div class="col-5 d-flex flex-row">
+                            <div class="col-lg-5 d-flex flex-row">
                                 <div class="">
                                     <img src="04.png" class="rounded d-block" alt="왜안나와">
                                 </div>
@@ -102,10 +126,10 @@
                 </header>
     
                   <main>
-                    <main class="container text-center my-4">
+                    <main class="container d-flex flex-wrap text-center my-4">
                       <div class="row">
-                        <div class="col-3 offset-1 me-5">
-                          <div class="card" style="width: 18rem; height:20rem;">
+                        <div class="col-lg-3 offset-lg-1 col-md-8 offset-md-2">
+                          <div class="card">
                             <img class="card-img-top" src="05.png" alt="Card image cap">
                             <div class="card-body">
                               <h5 class="card-title"><strong>자동 백업 및 동기화</strong></h5>
@@ -117,8 +141,8 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-3 me-5">
-                          <div class="card" style="width: 18rem; height:20rem;">
+                        <div class="col-lg-3 col-md-8 offset-lg-1 offset-md-2">
+                          <div class="card">
                             <img class="card-img-top" src="06.png" alt="Card image cap2">
                               <div class="card-body">
                                 <h5 class="card-title"><strong>언제 어디서나 접근</strong></h5>
@@ -127,8 +151,8 @@
                             </img>
                           </div>
                         </div>
-                        <div class="col-3">
-                          <div class="card" style="width: 18rem; height:20rem;">
+                        <div class="col-lg-3 col-md-8 offset-lg-1 offset-md-2">
+                          <div class="card">
                             <img class="card-img-top" src="07.png" alt="Card image cap3">
                             <div class="card-body">
                               <h5 class="card-title"><strong>어떤 파일이든 보관</strong></h5>
@@ -143,11 +167,12 @@
                   </main>
             </div>
             <div class="d-flex flex-column flex-wrap justify-content-center mt-5">
+                <a name="순간을 놓치지 마세요"></a>
                 <header class="mt-5 mb-3 d-flex flex-column flex-wrap justify-content-center">
                     <h1 class="text-center fw-bold">빛나는 순간을 놓치지 마세요</h1>
                 </header>
                 <main>
-                    <div id="carouselExampleCaptions" class="carousel slide col-6 offset-3">
+                    <div id="carouselExampleCaptions" class="carousel slide col-lg-6 offset-lg-3">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -188,7 +213,8 @@
                       </div>
                 </main>
             </div>
-            <div class="d-flex flex-column flex-wrap justify-content-center text-center mt-5">
+            <div class="d-flex flex-column flex-wrap justify-content-center text-center mt-5 mb-5">
+                <a name="네이버 메일, 블로그와 함께!"></a>
                 <header>
                     <h2 class="fw-bold">네이버 메일, 블로그를 사용하신다면</h2>
                     <h2 class="fw-bold">더욱 편리한 MYBOX!</h2>
@@ -196,15 +222,15 @@
                 <main>
                     <div class="container text-center mt-5 my-5">
                         <div class="row">
-                            <div class="col-5 offset-1">
+                            <div class="col-lg-5 offset-lg-1">
                                 <img src="11.png" class="d-block w-100" alt="왜안나와">
                             </div>
-                            <div class="col-5">
+                            <div class="col-lg-5">
                                 <img src="12.png" class="d-block w-100" alt="왜안나와">
                             </div>
                         </div>
                         <div class="row mt-5">
-                            <div class="col-5 offset-1 d-flex flex-row">
+                            <div class="col-lg-5 offset-lg-1 d-flex flex-row">
                                 <div class="me-4">
                                     <img src="13.png" class="" alt="왜안나와">
                                 </div>
@@ -213,7 +239,7 @@
                                     <p>대용량 파일을 받았을때 MYBOX로 바로 저장할 수 있어요! 또 파일 첨부 할때도 MYBOX에서 바로 첨부할 수 있습니다.</p>
                                 </div>
                             </div>
-                            <div class="col-5 d-flex flex-row">
+                            <div class="col-lg-5 d-flex flex-row">
                                 <div class="me-4">
                                     <img src="14.png" class="" alt="왜안나와">
                                 </div>
@@ -228,7 +254,11 @@
             </div>
         </div>
 
-        
+        <div style="position: fixed; bottom: 5px; right: 5px;">
+            <a href="#맨위">
+                <img src="button.png" alt="맨위">
+            </a>
+        </div>
        
             
             
