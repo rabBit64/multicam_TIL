@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+  .card-img {
+    border-radius: 3%;
+    height: 300px;
+  }
+  #title-custom{
+    padding-left:35px;
+  }
+  .multi-line-text-truncate {
+    overflow: hidden;
+    max-width: 400px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin: 3px auto;
+  }
+</style>
+
+<body>
+   <body class="container" id="최고 평점을 받은 한국의 휴가 숙소"> *지현*
+    <!--todo
+    1. 배치
+    2. 글자생략 말줄임표: https://getbootstrap.kr/docs/5.0/helpers/text-truncation/
+    3. 슈퍼호스트
+    4. card text 마진, 색-->
+    <div class="container-lg justify-content-between">
+      <header id="title-custom">
+        <h3>최고 평점을 받은 한국의 휴가 숙소</h3>
+        <p style="color:gray">위치, 청결도 등에서 게스트의 높은 평가를 받은 숙소입니다.</p>
+      </header>
+      <main>
+        <div class="container d-flex justify-content-around">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card border-0 position-relative" style="width: 20rem">
+                <span class="rounded position-absolute px-2 m-2 text-bg-light">슈퍼호스트</span>
+                <img src="12.webp" class="card-img" alt="Card img cap">
+                <div class="card-body">
+                  <div class="d-flex flex-row justify-content-between" style="height:19px;">
+                    <p class="card-title card-truncate"><strong>전주시 완산구의 집</strong></p>
+                    <p>★4.90(48)</p>
+                  </div>
+                  <div class="multi-line-text-truncate mb-0" style="color:gray">
+                    <div class="card-text mt-0">
+                    <p class="text-truncate mb-0">한옥스테이 “화응(花應)”</p>
+                    화응(花應)은 전주의 한 가운데, 완산구 태평동에 위치하고 있습니다.
+                    태평동은 과거 최초의 전주역과 연초제조창이 있던 교통과 상권의 중심이었으며 상인들의 마을인 주택가 골목에 그 당시 풍수와 지리를 활용하여 1969년 15평으로
+                    건축되었습니다.
+                    현재는 과거의 건축물들이 없어지고 아파트와 현대식 건물들이 세워지지만 화응(花應)은 그때 그 모습
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card border-0 position-relative" style="width: 20rem">
+                <span class="rounded position-absolute px-2 m-3 text-bg-light">슈퍼호스트</span>
+                <img src="13.webp" class="card-img" alt="Card img cap">
+                <div class="card-body">
+                  <div class="d-flex flex-row justify-content-between" style="height:29px;">
+                    <p class="card-title text-truncate"><strong>Gimsatgat-myeon, Yeongweol님이 호스팅하는 게스트용 별채 전체</strong></p>
+                    <p>★4.97(514)</p>
+                  </div>
+                  <div class="multi-line-text-truncate mt-0" style="color:gray">
+                    <div class="card-text mt-0">
+                    <p class="text-truncate mb-0">별이 보이는 감성충만 프라이빗 복층 Cosmos Room </p>
+                    영월의 스테이하우스는 커플이 프라이빗하게 쉬기 좋은 객실입니다.
+                    복층 구조로 되어있어 2층에 올라가면, 아늑하고 따뜻한 느낌의 객실에서 편안하게 즐기실 수 있습니다.
+                    창밖으로 들리는 계곡물소리와 지저귀는 새소리 그리고 맑은 공기는 도시에서 지친 마음에 휴식을 주며 매일 청결하게 관리하는 침구는 편안한 잠자리를 제공합니다.
+                    김삿갓계곡의 외씨버선길과 가깝고 숙소 바로 앞에는 아름다운 계곡이 흐르고 있습니다.
+                    객실에서는 Marshall 스피커로 감미로운 음악과 함께 빔 프로젝터로 보다 실감나고 편하게 영화를</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card border-0 position-relative" style="width: 20rem">
+                <span class="rounded position-absolute px-2 m-3 text-bg-light">슈퍼호스트</span>
+                <img src="14.webp" class="card-img" alt="Card img cap">
+                <div class="card-body">
+                  <div class="d-flex flex-row justify-content-between" style="height:26px;">
+                    <h6 class="card-title text-truncate"><strong>Daegwalnyeong-myeon, Pyeongchang-gun님이 호스팅하는 게스트용</strong></h6>
+                    <p>★4.97(270)</p>
+                  </div>
+                  <div class="multi-line-text-truncate" style="color:gray">
+                    <div class="card-text mt-0">
+                    <p class="text-truncate mb-0">대관령 양떼목장 근처 M&H 캠핑하우스 (노래방무료,독채 사계절 개별바베큐, 불멍가능)</p>
+                    🎙 아이들 포함 최대인원 6명까지 예약
+                      가능합니다~저희 M&H 하우스는 캠핑/모던으로 두 개의 펜션 27평 독채를 운영하고 있으며 이번에
+                      18평 독채 m&h캐빈하우스(2인,3인추천)도 추가 오픈하게 되었습니다~
+                      원하시는 날짜가 예약 완료라면
+                      프로필 사진을 눌러주시구 확인해보세요 ! 😄 m&h캐빈하우스는 따로 검색해 주세요~노래방이용은 밤10시까지만 허용되며 이용시 모든 문은 닫고 이용하셔야 합니다~</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+
+</html>
