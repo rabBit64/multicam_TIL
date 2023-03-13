@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 class="title heading">DOM 선택</h1>
+  <a href="https://www.google.com/">google</a>
+  <p class="text">content1</p>
+  <p class="text">content2</p>
+  <p class="text">content3</p>
+  <ul>
+    <li>list1</li>
+    <li>list2</li>
+  </ul>
+  <script>
+    //console.log('hello')
+    //클래스가 타이틀인 요소 선택
+    console.log(document.querySelector('.title'))
+    console.log(document.querySelector('.text'))
+    console.log(document.querySelectorAll('.text'))
+    //copySelector 사용하기 -> #NM_THEME_CATE_LIST > li:nth-child(6) > a
+
+    //속성 요소 조작
+    console.log(document.querySelector('h1'))
+    const h1Tag = document.querySelector('h1')
+    console.log(h1Tag.classList)
+    h1Tag.classList.add('test')
+    h1Tag.classList.remove('test')
+    console.log(h1Tag.classList)
+
+    //일반 속성 조작
+    const aTag = document.querySelector('a')
+    console.log(aTag.getAttribute('href'))
+    aTag.setAttribute('href','https://www.naver.com/')
+
+    const h1Tag2 = document.querySelector('.heading')
+    h1Tag2.textContent ='콘텐츠 수정'
+
+    //1. 생성
+    document.createElement('h1')
+    const h1Tag3 = document.createElement('h1')
+    h1Tag3.textContent = '제목'
+    console.log(h1Tag3)
+    //2. 추가
+    // 추가할 부모 선택
+    const divTag = document.querySelector('div')
+    divTag.appendChild(h1Tag3)
+    </script>
+</body>
+</html>
