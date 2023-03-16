@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" class="input-text">
+  <button id="btn">+</button>
+  <ul></ul>
+</body>
+<script>
+  //요소선택
+  const inputTag = document.querySelector('.input-text')
+  const btn = document.querySelector('#btn')
+  const ulTag = document.querySelector('ul')
+
+  //팁. 함수로 빼라
+  const addTodo = (event) =>{
+    
+    const inputData = inputTag.value
+    console.log(inputData)
+
+    //공백제거 결과 보기
+    if (inputData.trim()){
+      //li 요소 생성
+      const liTag = document.createElement('li')
+      liTag.textContent = inputData
+      console.log(liTag)
+      //부모 ul요소에 자식요소 추가
+      ulTag.appendChild(liTag)
+      //todo 추가후 input의 입력데이터 초기화
+      inputTag.value=''
+    }else{
+      alert('할일을 입력하세요')
+    }
+    
+  }
+  //버튼에 이벤트핸들러 부착
+  btn.addEventListener('click',addTodo)
+</script>
+</html>
