@@ -1,0 +1,15 @@
+{% extends 'articles/base.html' %}
+
+
+{% block content %}
+<div class="container">
+  <div class="d-flex mt-3">
+    <form action="/catch/" method="GET" class="d-flex">
+      <input type="text" name="message" class="form-control" aria-label="input-text">
+      <button class="btn btn-outline-primary">Throw</button>
+    </form>
+  </div>
+</div>
+
+
+{% endblock content %}

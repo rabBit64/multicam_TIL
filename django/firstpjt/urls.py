@@ -20,4 +20,8 @@ from articles import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('articles/', views.index),
+    path('today-dinner/',views.today_dinner),
+    path('throw/',views.throw),
+    path('catch/',views.catch),
+    path('lotto-create/', views.lotto_create),
 ]

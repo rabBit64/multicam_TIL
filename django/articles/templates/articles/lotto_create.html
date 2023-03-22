@@ -1,0 +1,11 @@
+{% extends 'articles/base.html' %}
+
+{% block content %}
+<div class="container">
+  <form action="/lotto/" method="GET" class="d-flex">
+    <input type="text" name="message" class="form-control">
+    <button type="button" class="btn btn-ouline-primary">생성</button>
+  </form>
+</div>
+
+{% endblock content %}
