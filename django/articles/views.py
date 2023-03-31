@@ -27,3 +27,7 @@ def catch(request):
 
 def lotto_create(request):
   return render(request, 'articles/lotto_create.html')
+
+
+def index(request):
+  return render(request, 'articles/index.html')

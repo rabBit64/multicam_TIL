@@ -14,6 +14,10 @@
   <p>우선 순위 {{article.priority}} </p>
   <p>생성 날짜 {{article.created_at}} </p>
   <p>마감 기한 {{article.deadline}} </p>
-  <hr>
+  <form action="{% url 'todos:delete' article.pk %}" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="삭제">
+  </form>
+  <a href="{% url 'todos:edit' %}">[EDIT]</a>
 </body>
 </html>

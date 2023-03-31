@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Todo
 
 def index(request):
@@ -33,4 +33,15 @@ def create(request):
     # DB 저장
     todo = Todo(title=title,content=content,priority=priority,deadline=deadline)
     todo.save()
-    return render(request, 'create.html')
+    #return render(request, 'create.html')
+
+    #이동할 url 응답
+    return redirect("todos:index")
+
+def delete(request, todo_pk):
+    todo = Todo.objects.get(pk=todo_pk)
+    todo.delete()
+    return redirect('todos:index')
+
+def edit(request):
+    return render(request, 'edit.html')
