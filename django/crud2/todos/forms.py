@@ -1,5 +1,6 @@
 from django import forms
-
+from .models import Todo
+'''
 class TodoForm(forms.Form):
   title = forms.CharField(
     widget=forms.TextInput(
@@ -22,3 +23,9 @@ class TodoForm(forms.Form):
         attrs={'type': 'date'},
     ),
 )
+'''
+#ModelForm
+class TodoForm(forms.ModelForm):
+  class Meta:
+    model = Todo
+    fields = '__all__'

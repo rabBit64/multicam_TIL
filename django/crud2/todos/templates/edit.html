@@ -8,6 +8,7 @@
 </head>
 <body>
   <h1>Edit</h1>
+  <!--
   <form action={% url 'todos:create' %} method="GET">
     제목: <input type="text" name="title"><br>
     내용: <input type="text" name="content"><br>
@@ -15,5 +16,12 @@
     마감기한: <input type="date" name="deadline">
     <input type="submit">
   </form>
+-->
+  <form action="{% url 'todos:update' todo.pk %}" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="UPDATE">
+  </form>
+  <a href="{% url 'todos:index' %}">[back]</a>
 </body>
 </html>

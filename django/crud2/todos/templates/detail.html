@@ -8,16 +8,17 @@
 </head>
 <body>
   <h1> Detail</h1>
-  <p>할 일 제목 {{article.title}}</p>
-  <p>할 일 내용 {{article.content}} </p>
-  <p>완료 여부 {{article.completed}} </p>
-  <p>우선 순위 {{article.priority}} </p>
-  <p>생성 날짜 {{article.created_at}} </p>
-  <p>마감 기한 {{article.deadline}} </p>
-  <form action="{% url 'todos:delete' article.pk %}" method="POST">
+  <p>할 일 제목 {{todo.title}}</p>
+  <p>할 일 내용 {{todo.content}} </p>
+  <p>완료 여부 {{todo.completed}} </p>
+  <p>우선 순위 {{todo.priority}} </p>
+  <p>생성 날짜 {{todo.created_at}} </p>
+  <p>마감 기한 {{todo.deadline}} </p>
+  <form action="{% url 'todos:delete' todo.pk %}" method="POST">
     {% csrf_token %}
     <input type="submit" value="삭제">
   </form>
-  <a href="{% url 'todos:edit' %}">[EDIT]</a>
+  <a href="{% url 'todos:update' todo.pk %}">[UPDATE]</a>
+  <a href="{% url 'todos:index' %}">[Back]</a>
 </body>
 </html>
