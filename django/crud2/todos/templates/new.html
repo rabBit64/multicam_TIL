@@ -8,12 +8,11 @@
 </head>
 <body>
   <h1>New</h1>
-  <form action={% url 'todos:create' %} method="GET">
-    제목: <input type="text" name="title"><br>
-    내용: <input type="text" name="content"><br>
-    우선순위: <input type="number" name="priority"><br>
-    마감기한: <input type="date" name="deadline">
+  <form action={% url 'todos:create' %} method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
     <input type="submit">
   </form>
+  <a href="{% url 'todos:index' %}"[back]</a>
 </body>
 </html>

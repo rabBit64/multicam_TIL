@@ -1,5 +1,6 @@
 from django.shortcuts import render,redirect
 from .models import Todo
+from .forms import TodoForm
 
 def index(request):
      # 전체게시글 조회 (결과가 쿼리셋으로 옴)
@@ -20,14 +21,18 @@ def detail(request, todo_pk):
     return render(request,'detail.html', context)
 
 def new(request):
-    return render(request, 'new.html')
+    form = TodoForm()
+    context = {
+        'form':form,
+    }
+    return render(request, 'new.html',context)
 
 def create(request):
     print(request.GET.get('title'))
-    title = request.GET.get('title')
-    content = request.GET.get('content')
-    priority = request.GET.get('priority')
-    deadline = request.GET.get('deadline')
+    title = request.POST.get('title')
+    content = request.POST.get('content')
+    priority = request.POST.get('priority')
+    deadline = request.POST.get('deadline')
 
 
     # DB 저장
